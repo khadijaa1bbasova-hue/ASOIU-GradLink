@@ -1,11 +1,13 @@
 /* Color Variables - Dəqiq rəng palitrası */
 :root {
-  --primary: #102C46;   /* Deep Navy - Əsas rəng */
-  --teal: #087E88;      /* Teal - İnkişaf və əlaqə */
-  --accent: #F0A35E;    /* Warm Orange - Vurğu rəngi */
-  --bg-light: #F4F7FA;  /* Soft White - Fon */
-  --text-dark: #1E293B; /* Tünd mətn */
-  --white: #FFFFFF;
+  --primary: #102C46;     /* Deep Navy */
+  --teal: #087E8B;        /* Teal */
+  --accent: #F0A35E;      /* Warm Orange */
+  --bg-light: #F4F7FA;    /* Soft White */
+  --dark: #0f172a;
+  --white: #ffffff;
+  --gray: #64748b;
+  --transition: all 0.3s ease;
 }
 
 * {
