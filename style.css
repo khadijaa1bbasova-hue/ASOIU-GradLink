@@ -1,10 +1,10 @@
-/* Color Variables */
+/* Color Variables - Dəqiq rəng palitrası */
 :root {
-  --primary: #0A192F;   /* Deep Navy */
-  --teal: #0EA5E9;      /* Teal / Accent Blue */
-  --accent: #F97316;    /* Warm Orange */
-  --bg-light: #F8FAFC;  /* Light Background */
-  --text-dark: #1E293B; /* Dark Text */
+  --primary: #102C46;   /* Deep Navy - Əsas rəng */
+  --teal: #087E88;      /* Teal - İnkişaf və əlaqə */
+  --accent: #F0A35E;    /* Warm Orange - Vurğu rəngi */
+  --bg-light: #F4F7FA;  /* Soft White - Fon */
+  --text-dark: #1E293B; /* Tünd mətn */
   --white: #FFFFFF;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.8rem;
   align-items: center;
 }
 
@@ -85,7 +85,7 @@ body {
 
 /* Buttons */
 .btn {
-  padding: 0.5rem 1.1rem;
+  padding: 0.55rem 1.2rem;
   border-radius: 8px;
   font-weight: 600;
   font-size: 0.9rem;
@@ -120,7 +120,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, #1E3A8A 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #1A365D 100%);
   color: var(--white);
   padding: 5rem 2rem;
   text-align: center;
@@ -148,58 +148,6 @@ body {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-}
-
-/* Page Headers */
-.page-header {
-  background: var(--primary);
-  color: white;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.page-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.page-header p {
-  opacity: 0.9;
-  font-size: 1rem;
-}
-
-/* Container & Sections */
-.container {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-}
-
-/* Footer */
-footer {
-  background: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
 }
 
 /* Modal Styles */
@@ -266,12 +214,11 @@ footer {
   border-color: var(--teal);
 }
 
-/* Responsive Media Query */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Mobil menyu üçün genişləndirilə bilər */
-  }
-  .mobile-menu-btn {
-    display: block;
-  }
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
 }
