@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vakansiyalar - ASOIU GradLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-graduation-cap"></i> ASOIU GradLink
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Ana Səhifə</a>
+      <a href="talents.html">İstedadlar</a>
+      <a href="mentors.html">Mentorlar</a>
+      <a href="vacancies.html" class="active">Vakansiyalar</a>
+    </nav>
+    <div class="nav-buttons">
+      <button class="btn btn-outline" onclick="openModal('login')">Daxil Ol</button>
+      <button class="btn btn-accent" onclick="openModal('register')">Qeydiyyat</button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: var(--primary); color: white; padding: 3rem 2rem; text-align: center;">
+    <h1>İş və Təcrübə Elanları</h1>
+    <p style="margin-top: 0.5rem; opacity: 0.9;">Tərəfdaş şirkətlərdən tələbələr və məzunlar üçün vakansiyalar</p>
+  </section>
+
+  <!-- Vacancies Content -->
+  <section style="max-width: 1100px; margin: 3rem auto; padding: 0 2rem;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--primary);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div>
+            <h3 style="color: var(--primary);">Junior Frontend Developer</h3>
+            <span style="font-size: 0.85rem; color: #666;">SOCAR AQŞ</span>
+          </div>
+          <span style="background: rgba(14, 165, 233, 0.1); color: var(--teal); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">Təcrübə</span>
+        </div>
+        <p style="color: #555; font-size: 0.95rem; margin-bottom: 1.5rem;">HTML, CSS, JavaScript bilikləri olan 3-cü və ya 4-cü kurs tələbələri üçün ödənişli təcrübə proqramı.</p>
+        <button class="btn btn-accent" style="width: 100%;">Müraciət Et</button>
+      </div>
+
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--primary);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+          <div>
+            <h3 style="color: var(--primary);">IT Support Specialist</h3>
+            <span style="font-size: 0.85rem; color: #666;">Kapital Bank</span>
+          </div>
+          <span style="background: rgba(14, 165, 233, 0.1); color: var(--teal); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">Tamştat</span>
+        </div>
+        <p style="color: #555; font-size: 0.95rem; margin-bottom: 1.5rem;">Şəbəkə avadanlıqları və texniki dəstək istiqamətində karyeraya başlamaq istəyən məzunlar üçün.</p>
+        <button class="btn btn-accent" style="width: 100%;">Müraciət Et</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Component -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title" style="color: var(--primary); margin-bottom: 1.5rem;">Giriş</h3>
+      <form id="modal-form" onsubmit="handleFormSubmit(event)"></form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 3rem;">
+    <p>&copy; 2026 ASOIU GradLink. Bütün hüquqlar qorunur.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
