@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İstedadlar Kataloqu - ASOIU GradLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-graduation-cap"></i> ASOIU GradLink
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Ana Səhifə</a>
+      <a href="talents.html" class="active">İstedadlar</a>
+      <a href="mentors.html">Mentorlar</a>
+      <a href="vacancies.html">Vakansiyalar</a>
+    </nav>
+    <div class="nav-buttons">
+      <button class="btn btn-outline" onclick="openModal('login')">Daxil Ol</button>
+      <button class="btn btn-accent" onclick="openModal('register')">Qeydiyyat</button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: var(--primary); color: white; padding: 3rem 2rem; text-align: center;">
+    <h1>İstedadlar Kataloqu</h1>
+    <p style="margin-top: 0.5rem; opacity: 0.9;">ADNSU-nun ən seçilən tələbə və məzunları ilə tanış olun</p>
+  </section>
+
+  <!-- Talents Content -->
+  <section style="max-width: 1100px; margin: 3rem auto; padding: 0 2rem;">
+    <!-- Filter bar -->
+    <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+      <input type="text" placeholder="Ad və ya ixtisas üzrə axtar..." style="flex: 1; min-width: 250px; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px;">
+      <select style="padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; background: white;">
+        <option>Bütün İxtisaslar</option>
+        <option>Radiotexnika və Telekommunikasiya</option>
+        <option>İnformasiya Təhlükəsizliyi</option>
+        <option>Kompüter Mühəndisliyi</option>
+      </select>
+    </div>
+
+    <!-- Talents Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <!-- Card 1 -->
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--teal);">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <div style="width: 50px; height: 50px; background: var(--teal); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 1.2rem;">XƏ</div>
+          <div>
+            <h3 style="color: var(--primary);">Xədicə Abbaszadə</h3>
+            <span style="font-size: 0.85rem; color: #666;">Radiotexnika və Telekommunikasiya</span>
+          </div>
+        </div>
+        <p style="color: #555; font-size: 0.95rem; margin-bottom: 1.5rem;">Frontend Proqramlaşdırma, HTML/CSS/JS, UI/UX dizayn və veb tətbiqlərin yaradılması üzrə ixtisaslaşır.</p>
+        <button class="btn btn-outline" style="width: 100%;">CV-ə Bax</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--teal);">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <div style="width: 50px; height: 50px; background: var(--teal); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 1.2rem;">RƏ</div>
+          <div>
+            <h3 style="color: var(--primary);">Rəşad Məmmədov</h3>
+            <span style="font-size: 0.85rem; color: #666;">İnformasiya Təhlükəsizliyi</span>
+          </div>
+        </div>
+        <p style="color: #555; font-size: 0.95rem; margin-bottom: 1.5rem;">Şəbəkə təhlükəsizliyi, penetrasiya testləri və Linux sistemlərinin idarə edilməsi sahəsində təcrübəli.</p>
+        <button class="btn btn-outline" style="width: 100%;">CV-ə Bax</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Component -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title" style="color: var(--primary); margin-bottom: 1.5rem;">Giriş</h3>
+      <form id="modal-form" onsubmit="handleFormSubmit(event)"></form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background: var(--primary); color: white; text-align: center; padding: 2rem; margin-top: 3rem;">
+    <p>&copy; 2026 ASOIU GradLink. Bütün hüquqlar qorunur.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
